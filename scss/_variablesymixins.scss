@@ -1,0 +1,22 @@
+$colorFuente: #90918C;
+$colorFuente2: #CAE2E2;
+$colorFuente3: #EBE1A2;
+
+$margenesBajos: 3rem;
+$margenRandom: 2rem;
+
+@mixin itemsTrabajos {
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 2rem;
+}
+@mixin bordes {
+    padding: .5rem .5rem .5rem .5rem;
+    margin: 1rem;
+    background: linear-gradient(82deg, rgba(255,229,244,1) 21%, rgba(255,246,223,1) 50%, rgba(216,252,248,1) 85%);
+    transition: 1s ease-in-out;
+    &:hover {
+        background: linear-gradient(82deg, rgba(255,246,223,1) 18%, rgba(216,252,248,1) 53%, rgba(255,229,244,1) 86%);
+    }
+}
